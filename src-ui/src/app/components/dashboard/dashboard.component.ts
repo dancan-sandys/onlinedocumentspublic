@@ -30,7 +30,7 @@ export class DashboardComponent implements OnInit {
 
   get subtitle() {
     if (this.displayName) {
-      return $localize`Hello ${this.displayName}!`
+      return $localize`Welcome`
     } else {
       return $localize`Welcome!`
     }
