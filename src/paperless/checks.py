@@ -10,7 +10,7 @@ exists_hint = "Create a directory at {}"
 writeable_message = "{} is not writeable"
 writeable_hint = (
     "Set the permissions of {} to be writeable by the user running the "
-    "Paperless services"
+    "services"
 )
 
 
