@@ -45,7 +45,14 @@ services:
       POSTGRES_PASSWORD: paperless
 
   webserver:
-    image: jonaswinkler/paperless-ng:latest
+    build:
+    context: .
+    args:
+      QPDF_VERSION: 11.3.0
+      PIKEPDF_VERSION: 2.16.1
+      PSYCOPG2_VERSION: 2.9.1
+      JBIG2ENC_VERSION: 0.29
+    # image: jonaswinkler/paperless-ng:latest
     restart: unless-stopped
     depends_on:
       - db
